@@ -92,4 +92,9 @@ export default {
 .projects h1 {
   padding: 1em;
 }
+@media (max-width: 1000px) {
+  .projects{
+    min-width: 0;
+  }
+}
 </style>

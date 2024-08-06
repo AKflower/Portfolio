@@ -15,7 +15,7 @@
         </div>
         <div class="column" :style="{display:'flex',flexDirection:'column',gap:'1em',alignItems: hoveredSkill? 'center' : '',justifyContent:'center'}">
             <transition name="hide" >
-            <div class="about-container" v-if="!hoveredSkill" style="top:30%;left:10%">
+            <div class="about-container" v-if="!hoveredSkill" id="exp" style="top:30%;left:10%">
                 <h1 style=" color:#058bac;">{{'<Experience>'}}</h1>
                 <h3 style="color:#ffc107" v-tooltip="'I have been a front-end developer at KTHub for a year, developing the CRM system for The ENEST English language center.'">
                     {{'<KTHub role="Front-end Developer" exp="1 year" />'}}
@@ -24,7 +24,7 @@
             </div>
             </transition>
             <transition name="hide" >
-            <div class="about-container" v-if="!hoveredSkill" style="top:10%;left:20%">
+            <div class="about-container" v-if="!hoveredSkill" id="education">
                 <h1 style=" color:yellow;">{{'<Education>'}}</h1>
                 <h3 style="color:#7bccf0" v-tooltip="'I honed my coding skills and deepened my tech knowledge with a 4-year Computer Science degree from Ho Chi Minh City University of Technology (HCMUT).'">
                     {{'<HCMUT degree="Bachelor of Computer Science" />'}}
@@ -33,7 +33,7 @@
             </div>
             </transition>
             <transition name="hide">
-             <div class="about-container" v-if="!hoveredSkill" style="bottom:20%;left:30%">
+             <div class="about-container" v-if="!hoveredSkill"  id="hobbies">
                 <h1 style=" color:silver;">{{'<Hobbies>'}}</h1>
                 <h3 style="color:#c4fbe7" v-tooltip="'Writing to explore myself.'">{{'<Write/>'}}</h3>
                 <h3 style="color:#ECCEAE" v-tooltip="'Reading gives us someplace to go when we have to stay where we are.'">{{'<ReadBook/>'}}</h3>
@@ -294,5 +294,31 @@ export default {
   /* white-space: nowrap; */
   z-index: 1000;
   max-width: 20em;
+}
+#hobbies {
+  bottom:20%;
+  left:30%
+}
+#education{
+  top:10%;
+  left:30%
+}
+@media (max-width: 1000px) {
+  .about{
+    grid-template-columns: repeat(1,1fr);
+    height: max-content;
+  }
+  .skillContainer {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .column{
+    min-height: 60vh;
+  }
+  #hobbies{
+    bottom: 10%;
+  }
+  #education{
+    top:1%;
+  }
 }
 </style>

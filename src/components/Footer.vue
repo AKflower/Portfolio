@@ -63,4 +63,16 @@ export default {
     .footer-social span {
         cursor: pointer;
     }
+   @media (max-width: 1000px) {
+        .footer-container{
+            width: 100vw;
+            min-width: 0;
+         }
+        .footer-infor{
+            margin: 0 1em;
+          }
+        .footer-bottom{
+            margin: 0 1em;
+        }
+    }
 </style>

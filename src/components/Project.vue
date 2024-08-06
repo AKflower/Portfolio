@@ -51,7 +51,8 @@ export default {
     .project-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 2em
+        padding: 2em;
+        width: 100vw;
     }
     .project-img{
         margin: 1em;
@@ -80,5 +81,11 @@ export default {
         padding: 1em 0;
         flex-grow: 1;
         font-weight: 500;
+    }
+    @media (max-width: 1000px) {
+         .project-container{
+            grid-template-columns: repeat(1,1fr);
+            padding: 0;
+         }
     }
 </style>
