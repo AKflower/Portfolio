@@ -297,11 +297,11 @@ export default {
 }
 #hobbies {
   bottom:20%;
-  left:30%
+  left:20%
 }
 #education{
   top:10%;
-  left:30%
+  left:25%
 }
 @media (max-width: 1000px) {
   .about{
