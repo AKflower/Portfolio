@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       night: false,
-      text: ["Front-end Developer", "Web Designer","Mentor"],
+      text: ["Fullstack Developer", "Web Designer","Mentor"],
     };
   },
 };
