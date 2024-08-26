@@ -33,6 +33,15 @@ export default {
 
         },
         {
+          name: "Color Seeker",
+          description:
+            "Color Seeker is a simple yet challenging game where you need to find the tile with a slightly different color among a grid of similar-colored tiles. With each level, the grid size increases and the colors become harder to distinguish, requiring keen attention and sharp observation skills. Quickly spot the different tile before time runs out and advance through the levels to achieve a high score!",
+          img: require("../assets/project/colorSeeker.gif"),
+          tag: ["HTML", "CSS", "JS"],
+          linkGit: 'https://akflower.github.io/Color-Seeker/',
+
+        },
+        {
           name: "ABCD Mall",
           description:
             "The ABCD shopping center, located on the outskirts of Mumbai, was established by ABCD Developers Pvt. Ltd. It covers an area of 23,000 square meters, with a frontage of 210 meters, and was designed by Cooper and colleagues. Inside the shopping center, there is a 4-story R supermarket, covering 7,000 square meters per floor. The shopping center also features a 7-story parking lot. The owner of the shopping center wants to create a website to advertise the shopping center.",
