@@ -24,6 +24,15 @@ export default {
     return {
       projects: [
         {
+          name: "Pong Game",
+          description:
+            "The Pong Game is a simple project that I learned from YouTube, and I have improved it by adding a two-player mode. This project helped me learn the basics of HTML5 game programming, such as drawing with canvas, collision handling, and more.",
+          img: require("../assets/project/ponggame.gif"),
+          tag: ["HTML", "CSS", "JS"],
+          linkGit: 'https://akflower.github.io/PongGame/',
+
+        },
+        {
           name: "ABCD Mall",
           description:
             "The ABCD shopping center, located on the outskirts of Mumbai, was established by ABCD Developers Pvt. Ltd. It covers an area of 23,000 square meters, with a frontage of 210 meters, and was designed by Cooper and colleagues. Inside the shopping center, there is a 4-story R supermarket, covering 7,000 square meters per floor. The shopping center also features a 7-story parking lot. The owner of the shopping center wants to create a website to advertise the shopping center.",
