@@ -33,7 +33,7 @@ export default {
 
         },
         {
-          name: "Color Seeker",
+          name: "Color Seeker Game",
           description:
             "Color Seeker is a simple yet challenging game where you need to find the tile with a slightly different color among a grid of similar-colored tiles. With each level, the grid size increases and the colors become harder to distinguish, requiring keen attention and sharp observation skills. Quickly spot the different tile before time runs out and advance through the levels to achieve a high score!",
           img: require("../assets/project/colorSeeker.gif"),
