@@ -11,6 +11,9 @@
                 {{item}}
                 </div>
             </div>
+            <div class="btn-demo-container">
+                <button @click="navigate()">Preview</button>
+            </div>
         </div>
     </div>
 </template>
@@ -25,7 +28,7 @@ export default {
       } else {
         return;
       }
-    } 
+    }
   },
   props: {
     name: {
@@ -64,14 +67,15 @@ export default {
     .project-img img {
         border-radius: 10px;
         cursor: pointer;
-       
+
     }
     .project-content{
         text-align: left;
-        margin: 1em;
+        margin: 1em 1.5em 1em 1em;
         display: flex;
         flex-direction: column;
-       
+        position: relative;
+
     }
     .project-content p {
         padding: 1em 0;
@@ -83,10 +87,25 @@ export default {
         flex-grow: 1;
         font-weight: 500;
     }
+    .btn-demo-container {
+       text-align: right;
+    }
+    .btn-demo-container button{
+        border-radius: 10px;
+        font-size: 1.1em;
+        border: none;
+        cursor: pointer;
+        padding: .5em 1em;
+        background: black;
+        color: white;
+    }
     @media (max-width: 1000px) {
          .project-container{
             grid-template-columns: repeat(1,1fr);
             padding: 0;
+         }
+         .btn-demo-container button{
+            width: 100%;
          }
     }
 </style>

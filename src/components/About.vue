@@ -5,13 +5,13 @@
             <p class="">I am a youthful and creative frontend developer, fueled by passion and a zest for innovation. I aspire to leverage my skills to craft intriguing, visually appealing, and highly functional software.</p>
             <div class="skillContainer">
                 <span v-for="(skill, index) in skills" :key="index"
-                @mouseleave="hoveredSkill=null" 
-                @mouseover="hoveredSkill=skills[index]" 
+                @mouseleave="hoveredSkill=null"
+                @mouseover="hoveredSkill=skills[index]"
                 :style="(hoveredSkill && skill.name==hoveredSkill.name) && styleSpan">
                     {{skill.name}}
                 </span>
             </div>
-            
+
         </div>
         <div class="column" :style="{display:'flex',flexDirection:'column',gap:'1em',alignItems: hoveredSkill? 'center' : '',justifyContent:'center'}">
             <transition name="hide" >
@@ -19,6 +19,9 @@
                 <h1 style=" color:#058bac;">{{'<Experience>'}}</h1>
                 <h3 style="color:#ffc107" v-tooltip="'I have been a front-end developer at KTHub for a year, developing the CRM system for The ENEST English language center.'">
                     {{'<KTHub role="Front-end Developer" exp="1 year" />'}}
+                </h3>
+                  <h3 style="color:#ffc107" v-tooltip="'As a full-stack developer at CynoSoftware for 6 months, I worked on multiple projects involving both frontend (Next.js) and backend (Node.js, Express, PostgreSQL), delivering scalable and maintainable web applications.'">
+                    {{'<CynoSoftware role="Full-stack Developer" exp="6 months" />'}}
                 </h3>
                 <h1 style=" color:#058bac;">{{'</Experience>'}}</h1>
             </div>
@@ -240,12 +243,12 @@ export default {
 }
 .hide-leave-active {
   transition: all 0.2s ease;
-   transform: scale(1); 
+   transform: scale(1);
     opacity: 1;
 }
 .hide-leave-to {
      opacity: .5;
-   transform: scale(.1); 
+   transform: scale(.1);
 }
 .fade-slide-enter-active,
 .fade-slide-leave-active {
@@ -315,7 +318,7 @@ export default {
     min-height: 60vh;
   }
   #hobbies{
-    bottom: 10%;
+    bottom: 5%;
   }
   #education{
     top:1%;
