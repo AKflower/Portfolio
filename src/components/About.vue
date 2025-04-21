@@ -191,7 +191,7 @@ export default {
   margin: 0 !important;
 }
 .about-container h3 {
-  padding: 0 0 0 2em;
+  padding: 0 .5em 0 2em;
 }
 .column {
   text-align: left;

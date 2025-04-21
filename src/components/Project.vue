@@ -86,6 +86,7 @@ export default {
         padding: 1em 0;
         flex-grow: 1;
         font-weight: 500;
+        flex-wrap: wrap;
     }
     .btn-demo-container {
        text-align: right;
